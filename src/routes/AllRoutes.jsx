@@ -6,12 +6,15 @@ import { HomePage, Login, ProductList } from '../pages';
 export const AllRoutes = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage/>} />
-        <Route path="/product" element={<ProductList/>} />
-        <Route path="/login" element={<Login/>} />
+      <div className='main'>
 
-      </Routes>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product" element={<ProductList />} />
+          <Route path="/login" element={<Login />} />
+
+        </Routes>
+      </div>
     </>
   )
 }
