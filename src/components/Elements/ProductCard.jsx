@@ -1,18 +1,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const ProductCard = () => {
+export const ProductCard = ({ item }) => {
+  const { id, name, poster, overview, best_seller } = item
+  // console.log(name)
   return (
     <div className="m-3 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-      <Link to="/" className="relative" >
-        <span className="absolute top-4 left-2 px-2 bg-orange-500 bg-opacity-90 text-white rounded">Best Seller</span>
-        <img className="rounded-t-lg w-full h-64" src="./images/10001.avif" alt="" />
+
+
+      <Link to={`product-details/${id}`} className="relative" >
+        {
+          best_seller &&
+          <span className="absolute top-4 left-2 px-2 bg-orange-500 bg-opacity-90 text-white rounded">Best Seller</span>
+        }
+        {/* <img className="rounded-t-lg w-full h-64" src="./images/10001.avif" alt="" /> */}
+        <img className="rounded-t-lg w-full h-64" src={poster} alt="" />
       </Link>
+
       <div className="p-5">
-        <Link to="/" >
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">The Complete Guide to Backend Development</h5>
+        <Link to={`product-details/${id}`} >
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
         </Link>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde quisquam magni vel eligendi nam.</p>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{overview}</p>
 
         <div className="flex items-center my-2">
           <i className="text-lg bi bi-star-fill text-yellow-500 mr-1"></i>

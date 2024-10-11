@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export const Accordian = ({ item }) => {
     const { question, answer } = item;
     const [showAccordian, setShowAccordian] = useState(false);
-    console.log(showAccordian)
+    // console.log(showAccordian)
     return (
         <div>
             <h2 id="accordion-flush-heading-1" onClick={() => setShowAccordian(!showAccordian)} >
