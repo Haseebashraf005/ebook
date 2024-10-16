@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { RatingStars } from '../components/Elements/RatingStars';
+import { useTitle } from '../hook/useTitle';
 
 export const ProductDetail = () => {
     let { id } = useParams()
 
     const [poroductDetail, setporoductDetail] = useState({})
+    useTitle(poroductDetail?.name)
 
+    
+    
+    
     useEffect(() => {
         const getProductDetail = async () => {
             try {
@@ -20,7 +25,7 @@ export const ProductDetail = () => {
                 alert(error.message); // Set any errors in the state
             }
         };
-
+        
         getProductDetail(); // Call the async function
     }, [id]);
     const { name, overview, poster, price, rating, long_description, best_seller, in_stock } = poroductDetail

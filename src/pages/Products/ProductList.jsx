@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { ProductCard } from "../../components"
 import { FilterBar } from "./components/FilterBar"
 import { useLocation } from "react-router-dom"
+import { useTitle } from "../../hook/useTitle"
 
 export const ProductList = () => {
   const [showFilterBar, setShowFilterBar] = useState(false)
@@ -10,6 +11,8 @@ export const ProductList = () => {
   const search = useLocation().search
   const searchTerm = new URLSearchParams(search).get("q") 
   // console.log(searchTerm)
+
+  useTitle("E-Books Collections");
  
 
   useEffect(() => {
