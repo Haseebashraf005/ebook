@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Logo from "../assets/logo.png";
 import { Link } from 'react-router-dom';
 import { SearchSection } from './index';
+import JawadApi from './JawadApi';
 
 export const Header = () => {
     const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("dark")) || false);
     const [searchSection,setSearchSection] = useState(false)
 
+  
     useEffect(() => {
         localStorage.setItem("dark", JSON.stringify(darkMode));
         if (darkMode) {
@@ -40,6 +42,7 @@ export const Header = () => {
                 searchSection &&
             <SearchSection setSearchSection={setSearchSection}/>
             }
+            {/* <JawadApi/> */}
         </header>
     );
 };

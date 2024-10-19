@@ -3,18 +3,21 @@ import { useNavigate } from 'react-router-dom';
 
 export const SearchSection = ({setSearchSection}) => {
 
+
+
   const navigate =useNavigate()    
 
 
   const handleSubmit = (e)=>{
     e.preventDefault();
     let query = e.target.search.value;
-    navigate(`/products/?q=${query}`);
+    navigate(`/products?q=${query}`);
     console.log(query)
 
     e.target.reset()
     setSearchSection(false)
   }
+
   return (
     <div className="mx-auto max-w-screen-xl p-2 my-5">
     <form className="flex items-center" onSubmit={handleSubmit}>   

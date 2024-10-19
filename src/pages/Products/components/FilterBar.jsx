@@ -14,30 +14,30 @@ export const FilterBar = ({setShowFilterBar}) => {
                       <p className="font-semibold my-1">Sort by</p>                      
                       <div className="flex items-center my-1">
                           <input id="price-sort-1" type="radio" value="" name="price-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="price-sort-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price - Low to High</label>
+                          <label htmlFor="price-sort-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Price - Low to High</label>
                       </div>
                       <div className="flex items-center my-1">
                           <input id="price-sort-2" type="radio" value="" name="price-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="price-sort-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Price - High to Low</label>
+                          <label htmlFor="price-sort-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">Price - High to Low</label>
                       </div>
                     </li>
                     <li className="mt-1 mb-5">
                       <span className="font-semibold">Rating</span>
                       <div className="flex items-center my-1">
                           <input id="rating-sort-1" type="radio" value="" name="rating-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="rating-sort-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">4 Stars & Above</label>
+                          <label htmlFor="rating-sort-1" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">4 Stars & Above</label>
                       </div>
                       <div className="flex items-center my-1">
                           <input id="rating-sort-2" type="radio" value="" name="rating-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="rating-sort-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">3 Stars & Above</label>
+                          <label htmlFor="rating-sort-2" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">3 Stars & Above</label>
                       </div>
                       <div className="flex items-center my-1">
                           <input id="rating-sort-3" type="radio" value="" name="rating-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="rating-sort-3" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">2 Stars & Above</label>
+                          <label htmlFor="rating-sort-3" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">2 Stars & Above</label>
                       </div>
                       <div className="flex items-center my-1">
                           <input id="rating-sort-4" type="radio" value="" name="rating-sort" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600" />
-                          <label htmlFor="rating-sort-4" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">1 Stars & Above</label>
+                          <label htmlFor="rating-sort-4" className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300 cursor-pointer">1 Stars & Above</label>
                       </div>
                     </li>
                     <li className="mt-1 mb-5">
