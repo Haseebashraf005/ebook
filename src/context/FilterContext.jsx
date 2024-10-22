@@ -34,6 +34,7 @@ export const FilterProvider = ({ children }) => {
     }
 
     const value = {
+        
         productList:state.productList,
         initializeProductList
     }

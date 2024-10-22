@@ -12,7 +12,7 @@ export const SearchSection = ({setSearchSection}) => {
     e.preventDefault();
     let query = e.target.search.value;
     navigate(`/products?q=${query}`);
-    console.log(query)
+    // console.log(query)
 
     e.target.reset()
     setSearchSection(false)
